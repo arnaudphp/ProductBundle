@@ -1,0 +1,11 @@
+services:
+    leoo_sourcing_product:
+        class: Leoo\Sourcing\ProductBundle\Service\SourcingProduct
+        arguments: ["@guzzle.client.product"]
+
+    guzzle.client.product:
+        class: "%guzzle.client.class%"
+        arguments:
+            - 'http://www.mocky.io/v2/'
+        tags:
+            -  { name: guzzle.client }

@@ -1,0 +1,3 @@
+leoo_sourcing_product_homepage:
+    path:     /
+    defaults: { _controller: LeooSourcingProductBundle:Default:index }
